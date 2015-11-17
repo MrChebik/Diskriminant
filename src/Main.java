@@ -18,7 +18,7 @@ public class Main extends JFrame {
     String str1, str2, str3;
     String strR1 = "", strR2 = "", strR3 = "";
     String OSname = System.getProperty("os.name");
-    int OS = 0, OS1 = 0;
+    int OS = 0, OS1 = 0, OS2 = 0;
     int s, i, m, m1;
     Timer time1 = new Timer(100, e -> str1 = t1.getText());
     Timer time2 = new Timer(100, e -> str2 = t2.getText());
@@ -416,8 +416,9 @@ public class Main extends JFrame {
         if (!OSname.equals("Linux")) {
             OS = 45;
             OS1 = 12;
+            OS2 = 15;
         }
-        setSize(228 - OS+OS1, 340 + OS1);
+        setSize(228 - OS+OS, 340+OS2);
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
