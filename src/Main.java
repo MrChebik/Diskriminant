@@ -417,7 +417,7 @@ public class Main extends JFrame {
             OS = 45;
             OS1 = 12;
         }
-        setSize(228 - OS, 340 + OS1);
+        setSize(228 - OS+OS1, 340 + OS1);
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
